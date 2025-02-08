@@ -39,30 +39,17 @@
 
     <div class="header-top">
       <div class="container">
-
-        <a href="tel:+01123456790" class="helpline-box">
-
-          <div class="icon-box">
-            <ion-icon name="call-outline"></ion-icon>
-          </div>
-
-          <div class="wrapper">
-            <p class="helpline-title">For Further Inquires :</p>
-
-            <p class="helpline-number">+01 (123) 4567 90</p>
-          </div>
-
-        </a>
-
         <a href="#" class="logo">
           <img src="./assets/images/logo.svg" alt="Tourly logo">
         </a>
 
         <div class="header-btn-group">
-
-          <button class="search-btn" aria-label="Search">
-            <ion-icon name="search"></ion-icon>
-          </button>
+          <div class="search-container">
+            <button class="search-icon" aria-label="Search" onclick="toggleSearch()">
+              <ion-icon name="search"></ion-icon>
+            </button>
+            <input type="text" class="search-box" placeholder="Search to step back in time..." />
+          </div>
 
           <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
             <ion-icon name="menu-outline"></ion-icon>
@@ -115,27 +102,27 @@
           <ul class="navbar-list">
 
             <li>
-              <a href="#home" class="navbar-link" data-nav-link>home</a>
+              <a href="#home" class="navbar-link" data-nav-link>home <div class="line"></div></a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link" data-nav-link>about us</a>
+              <a href="#" class="navbar-link" data-nav-link>about us <div class="line"></div></a>
             </li>
 
             <li>
-              <a href="#destination" class="navbar-link" data-nav-link>destination</a>
+              <a href="#destination" class="navbar-link" data-nav-link>destination <div class="line"></div></a>
             </li>
 
             <li>
-              <a href="#package" class="navbar-link" data-nav-link>packages</a>
+              <a href="#package" class="navbar-link" data-nav-link>packages <div class="line"></div></a>
             </li>
 
             <li>
-              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+              <a href="#gallery" class="navbar-link" data-nav-link>gallery <div class="line"></div></a>
             </li>
 
             <li>
-              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+              <a href="#contact" class="navbar-link" data-nav-link>contact us <div class="line"></div></a>
             </li>
 
           </ul>
@@ -822,6 +809,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/search.js"></script>
 
   <!-- 
     - ionicon link
