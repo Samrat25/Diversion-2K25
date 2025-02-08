@@ -348,9 +348,9 @@ body { background: var(--white); }
 
 .navbar-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 40px 15px;
+  padding:27px 0;
 }
 
 .navbar-top .logo img { width: 150px; }
@@ -1195,7 +1195,7 @@ address {
     transition: var(--transition);
   }
 
-  .header-bottom .container { padding-block: 15px; }
+  .header-bottom .container { padding-block: 13px; }
 
   .header .navbar { all: unset; }
 
