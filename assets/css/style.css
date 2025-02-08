@@ -222,10 +222,9 @@ body { background: var(--white); }
   top: 0;
   left: 0;
   width: 100%;
+  /* border: 1px solid hsla(0, 0%, 100%, 0.197); */
   transition: var(--transition);
-  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
-  padding-block: 15px;
-  z-index: 1;
+  padding: 7px 4px;
 }
 
 .header.active .header-top {
@@ -240,7 +239,9 @@ body { background: var(--white); }
 
 .header-top .logo img { max-width: 100px; }
 
-.logo{ align-self: center; }
+.logo{ 
+  align-self: center;
+}
 
 .header-btn-group {
   justify-self: flex-end;
@@ -261,7 +262,7 @@ body { background: var(--white); }
 }
 
 .search-icon {  
-  font-size: 15px;
+  font-size: 18px;
   color: inherit;
   padding-right: 8px;
   opacity: 1;
@@ -297,13 +298,12 @@ body { background: var(--white); }
 }
 
 
-.header-bottom { border-bottom: 1px solid hsla(0, 0%, 100%, 0.1); }
 
 .header-bottom .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 15px;
+  padding-block: 30px;
 }
 
 .social-list {
@@ -323,7 +323,7 @@ body { background: var(--white); }
 
 .social-link:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.2); }
 
-.header .btn { --padding: 4px 20px; }
+.header .btn { --padding: 4px 11px; }
 
 .header .navbar {
   position: fixed;
@@ -401,10 +401,10 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("../images/hero-banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url("../images/Hero.jpg");
+  /* background-repeat: no-repeat; */
+  background-size:cover;
+  /* background-position:center; */
   background-color: hsla(0, 0%, 0%, 0.7);
   background-blend-mode: overlay;
   display: grid;
@@ -916,13 +916,11 @@ address {
 
   .header { padding-top: 83px; }
 
-  .helpline-box .icon-box { padding: 14px; }
+  .header-top .logo img { max-width: 120px; }
 
-  .header-top .logo img { max-width: 150px; }
+  .search-icon { font-size: 25px ;}
 
-  .search-icon { font-size: 32px ;}
-
-  .nav-open-btn { font-size: 40px; }
+  .nav-open-btn { font-size: 30px; }
 
   .search-container.active .search-box{
     width: 195px;
@@ -935,6 +933,10 @@ address {
   .header .btn {
     --fs-5: 14px;
     --padding: 6px 20px;
+  }
+
+  .header-bottom .container{
+    padding-block:20px;
   }
 
 
@@ -1193,7 +1195,7 @@ address {
     transition: var(--transition);
   }
 
-  .header-bottom .container { padding-block: 0; }
+  .header-bottom .container { padding-block: 15px; }
 
   .header .navbar { all: unset; }
 
