@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #f6f5f7;
+    background-image: url("/assets/images/mandir3.jpg");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: -20px 0 50px;
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 h1 {
@@ -33,18 +33,19 @@ p {
 }
 
 span {
+    
     font-size: 12px;
 }
 
 a {
-    color: #0e263d;
+    color: white;
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
 }
 
 .container {
-    background: #fff;
+    background: rgba(248, 243, 243, 0.021);
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
     position: relative;
@@ -55,7 +56,7 @@ a {
 }
 
 .form-container form {
-    background: #fff;
+    background : rgba(248, 243, 243, 0.021);
     display: flex;
     flex-direction: column;
     padding:  0 50px;
@@ -63,6 +64,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 .social-container {
@@ -143,11 +145,12 @@ button.ghost {
     overflow: hidden;
     transition: transform .6s ease-in-out;
     z-index: 100;
+    color: white;
 }
 
 .overlay {
     background: #ff416c;
-    background: linear-gradient(to right, #008ecf, #008ecf) no-repeat 0 0 / cover;
+    background: linear-gradient(to right,rgba(248, 243, 243, 0.021), rgba(248, 243, 243, 0.021)) no-repeat 0 0 / cover;
     color: #fff;
     position: relative;
     left: -100%;
