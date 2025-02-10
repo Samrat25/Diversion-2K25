@@ -918,7 +918,7 @@ address {
  */
  @media (min-width:300px){
  .hero .video{
-  height: 550px;
+  height: 500px;
  }
 }
 
