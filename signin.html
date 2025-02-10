@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/signin.css">
+    <script type="module" src="assets/js/firebase.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+         @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
     box-sizing: border-box;
@@ -100,6 +102,7 @@ a {
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
+    border-radius: 10px;
 }
 
 button {
@@ -185,6 +188,7 @@ button.ghost {
     text-align: center;
     transform: translateY(0);
     transition: transform .6s ease-in-out;
+    
 }
 
 .overlay-right {
@@ -227,6 +231,18 @@ button.ghost {
 .container.right-panel-active .overlay-right {
     transform: translateY(20%);
 }
+/* message */
+.messageDiv{
+    background-color:hsl(327,90%,28%);
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius: 5px;
+    font-size:1rem;
+    opacity:0;
+    animation:fadeOut 7s forwards;
+
+}
 
     </style>
 </head>
@@ -241,10 +257,11 @@ button.ghost {
                     <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fhl%3Den%26utm_source%3DOGB%26utm_medium%3Dact%26gar%3DWzJd&ec=GAlAwAE&hl=en&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1177420996%3A1738830211148824&ddm=1" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <a href="https://in.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
+                <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="text" id="name" placeholder="Name" />
+                <input type="email" id="email" placeholder="Email" />
+                <input type="password" id="password" placeholder="Password" />
                 <button>Sign Up</button>
             </form>
         </div>
@@ -257,10 +274,10 @@ button.ghost {
                     <a href="https://in.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" id="email" placeholder="Email" />
+                <input type="password" id="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <button id="signin">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">
