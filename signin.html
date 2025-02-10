@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/images/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/signin.css">
-    <script type="module" src="assets/js/firebase.js"></script>
     <style>
-         @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
     box-sizing: border-box;
@@ -102,7 +100,6 @@ a {
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
-    border-radius: 10px;
 }
 
 button {
@@ -188,7 +185,6 @@ button.ghost {
     text-align: center;
     transform: translateY(0);
     transition: transform .6s ease-in-out;
-    
 }
 
 .overlay-right {
@@ -231,18 +227,6 @@ button.ghost {
 .container.right-panel-active .overlay-right {
     transform: translateY(20%);
 }
-/* message */
-.messageDiv{
-    background-color:hsl(327,90%,28%);
-    color:white;
-    padding:10px 20px;
-    margin:10px;
-    border-radius: 5px;
-    font-size:1rem;
-    opacity:0;
-    animation:fadeOut 7s forwards;
-
-}
 
     </style>
 </head>
@@ -283,11 +267,13 @@ button.ghost {
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
+                    <img src="assets/images/Logo.png" width="45%" alt="logo">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please signin with your personal info</p>
                     <button class="ghost" id="signIn">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
+                    <img src="assets/images/Logo.png" width="45%" alt="logo">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with us</p>
                     <button class="ghost" id="signUp">Sign Up</button>

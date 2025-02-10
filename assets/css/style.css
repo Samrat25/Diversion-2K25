@@ -881,7 +881,7 @@ address {
 .go-top {
   position: fixed;
   bottom: 15px;
-  right: 15px;
+  left: 15px;
   width: 35px;
   height: 35px;
   background: var(--bright-navy-blue);
