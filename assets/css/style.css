@@ -916,6 +916,12 @@ address {
 /**
  * responsive for larger than 580px screen
  */
+ @media (min-width:300px){
+ .hero .video{
+  height: 599px;
+ }
+}
+
 
 @media (min-width: 600px) {
 
@@ -982,7 +988,15 @@ address {
     min-height: 800px;
     padding-top: 85px;
   }
+  .hero .video {
+   height: 118vh;
+   width: 100vw;
 
+ }
+ .hero video{
+  min-height: 500px;
+
+ }
   .hero-text { --fs-5: 15px; }
 
   .btn-group { gap: 20px; }
