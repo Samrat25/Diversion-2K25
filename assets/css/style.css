@@ -414,25 +414,25 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .hero {
-  background-color: rgb(21, 129, 224);
+  /* background-color: rgb(21, 129, 224); */
   /* background-repeat: no-repeat; */
-  background-size:cover;
+  /* background-size:cover; */
   /* background-position:center; */
-  background-color: hsla(0, 0%, 0%, 0.7);
-  background-blend-mode: overlay;
+  background-color: hsla(0, 0%, 0%, 0.6);
+  /* background-blend-mode: overlay; */
   display: grid;
   place-items: center;
   min-height: 600px;
   text-align: center;
-  padding-top: 125px;
+  /* padding-top: 125px; */
 }
 .hero video{
-  z-index: 000;
+  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 120%;
+  /* height: 100%; */
   object-fit: cover;
 }
 .home ::before{
@@ -916,12 +916,12 @@ address {
 /**
  * responsive for larger than 580px screen
  */
- @media (min-width:300px){
+ /* @media (min-width:300px){
  .hero .video{
   height: 66vh;
   width: 100vw;
  }
-}
+} */
 
 
 @media (min-width: 600px) {
@@ -987,17 +987,13 @@ address {
 
   .hero {
     min-height: 800px;
-    padding-top: 85px;
+    /* padding-top: 85px; */
   }
-  .hero .video {
-   height: 118vh;
-   width: 100vw;
+ /* .hero video{
+  height: 100%;
+  width: 100%;
 
- }
- .hero video{
-  min-height: 500px;
-
- }
+ } */
   .hero-text { --fs-5: 15px; }
 
   .btn-group { gap: 20px; }
