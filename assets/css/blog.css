@@ -287,7 +287,7 @@ nav.active {
 
 .header {
   height: 100vh;
-  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Flandscape%2F&psig=AOvVaw0q7iEsAK8KRKcN_ADcqnRg&ust=1739378565661000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMij8qCIvIsDFQAAAAAdAAAAABAE");
+  background: url("https://wallpapercave.com/wp/wp7769333.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -297,6 +297,7 @@ nav.active {
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 0;
 }
 
 .custom-shape-divider-bottom-1631284471 {
