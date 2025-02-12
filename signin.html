@@ -8,6 +8,7 @@
     <title>Login Radius - Signin/Signup</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/images/Logo.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
@@ -240,10 +241,11 @@ button.ghost {
                     <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fhl%3Den%26utm_source%3DOGB%26utm_medium%3Dact%26gar%3DWzJd&ec=GAlAwAE&hl=en&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1177420996%3A1738830211148824&ddm=1" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <a href="https://in.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
+                <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="text" id="name" placeholder="Name" />
+                <input type="email" id="email" placeholder="Email" />
+                <input type="password" id="password" placeholder="Password" />
                 <button>Sign Up</button>
             </form>
         </div>
@@ -256,20 +258,22 @@ button.ghost {
                     <a href="https://in.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" id="email" placeholder="Email" />
+                <input type="password" id="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <button id="signin">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
+                    <img src="assets/images/Logo.png" width="45%" alt="logo">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please signin with your personal info</p>
                     <button class="ghost" id="signIn">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
+                    <img src="assets/images/Logo.png" width="45%" alt="logo">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with us</p>
                     <button class="ghost" id="signUp">Sign Up</button>
